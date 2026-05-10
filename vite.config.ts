@@ -17,9 +17,10 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       
       // 2. Netlify par API_KEY ko recognize karne ke liye ye format behtar hai
-      define: {
-        'process.env': env
-      },
+     // Isay replace karen
+define: {
+  'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+},
       
       resolve: {
         alias: {
