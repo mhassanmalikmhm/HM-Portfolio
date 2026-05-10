@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Bot, Zap, Github } from 'lucide-react';
+import profilePic from './PFP1.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -60,10 +61,10 @@ const Hero: React.FC = () => {
             <div className="absolute -inset-1 bg-gradient-to-br from-brand-accent via-purple-500 to-brand-dark rounded-[2.1rem] opacity-50 blur-md -z-10"></div>
             
             <img 
-              src="components/PFP1.jpg" 
-              alt="Hassan Malik Profile Picture" 
-              className="relative w-full h-full object-cover rounded-[2rem] shadow-2xl z-10 border border-white/10"
-            />
+  src={profilePic} 
+  alt="Hassan Malik" 
+  className="w-48 h-48 rounded-full object-cover" // Apni classes rehne den
+/>
             
             {/* Floating Badge 1 */}
             <div className="absolute -top-6 -right-6 bg-brand-dark/90 backdrop-blur-sm p-4 rounded-2xl border border-white/10 shadow-2xl z-20 animate-[bounce_3s_infinite]">
