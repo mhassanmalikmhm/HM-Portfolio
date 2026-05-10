@@ -21,6 +21,14 @@ export default defineConfig(({ mode }) => {
 define: {
   'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
 },
+
+export default defineConfig(({ mode }) => {
+    // ... baqi code
+    return {
+      base: './', // <-- Yeh line lazmi honi chahiye
+      // ... plugins wagera
+    }
+});
       
       resolve: {
         alias: {
