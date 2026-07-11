@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import logoImg from "./Screenshot 2026-07-11 091619.png";
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
