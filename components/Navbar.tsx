@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <img 
-              src="https://i.ibb.co/fY6PCJzp/Screenshot-2025-12-17-175829.png" 
+              src="Screenshot 2026-07-11 091619.png" 
               alt="Hassan Malik Logo" 
               className="h-10 w-10 rounded-full object-cover border border-white/10"
             />
