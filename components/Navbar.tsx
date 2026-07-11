@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logoImg from "./Screenshot 2026-07-11 091619.png";
+
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -18,12 +19,15 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
+            {/* YAHAN CHANGE KIYA HAI: src={logoImg} */}
             <img 
-              src="Screenshot 2026-07-11 091619.png" 
+              src={logoImg} 
               alt="Hassan Malik Logo" 
               className="h-10 w-10 rounded-full object-cover border border-white/10"
             />
-            <span className="text-xl font-bold tracking-tight text-white">Hassan<span className="text-brand-accent">.Auto</span></span>
+            <span className="text-xl font-bold tracking-tight text-white">
+              Hassan<span className="text-brand-accent">.Auto</span>
+            </span>
           </div>
           
           {/* Navigation links removed as requested */}
